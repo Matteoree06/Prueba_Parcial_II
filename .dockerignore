@@ -1,0 +1,72 @@
+# Archivos y directorios a ignorar en el build de Docker
+
+# Dependencias de Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs de Laravel
+storage/logs/*.log
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+
+# Archivos de entorno
+.env
+.env.local
+.env.production
+.env.staging
+
+# Archivos de base de datos
+*.sqlite
+*.db
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.swo
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentación
+README.md
+docs/
+
+# Tests
+tests/
+phpunit.xml
+
+# Vendor (se instalará en el contenedor)
+vendor/
+
+# Archivos compilados
+public/build/
+public/hot
+public/storage
+
+# Composer
+composer.lock
+composer.phar
+
+# Cache
+bootstrap/cache/*
+storage/framework/cache/*
+
+# Scripts
+# (No hay scripts de setup)
